@@ -34,5 +34,10 @@ auto main(int argc, const char** argv) -> int {
     } else {
         std::cout<<"Nositel rodneho cisla "<<a<<" ma menej ako 90"<<std::endl;
     }
+    if (std::stoi(b.substr(4,1)) == 5 || std::stoi(b.substr(4,1)) == 6) {
+        std::cout<<"Drzitel tohto rodneho je zenskeho pohlavia."<<std::endl;
+    } else {
+        std::cout<<"Drzitel tohto rodneho je muzskeho pohlavia."<<std::endl;
+    }
     return 0;
 }

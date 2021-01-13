@@ -7,7 +7,7 @@ auto main(int argc, const char** argv) -> int {
     std::getline(std::cin, a);
     bool b = true; 
     for (int i = 0; i < a.length() / 2; ++i) {
-        if (a[i] != *(a.end()-i-1)) {
+        if (a.at(i) != *(a.end()-i-1)) {
             b = false;
         }
     }
