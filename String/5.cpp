@@ -2,12 +2,17 @@
 #include <string>
 
 auto main(int argc, const char** argv) -> int {
-    std::string a;
+    std::string a, aa;
     std::cout<<"Zadaj retazec pismen: ";
     std::getline(std::cin, a);
     bool b = true; 
-    for (int i = 0; i < a.length() / 2; ++i) {
-        if (a.at(i) != *(a.end()-i-1)) {
+    for (int i = 0; i < a.length(); ++i){
+        if (a.at(i) != ' ') {
+            aa += a.at(i);
+        }
+    }
+    for (int i = 0; i < aa.length() / 2; ++i) {
+        if (aa.at(i) != *(aa.end()-i-1)) {
             b = false;
         }
     }

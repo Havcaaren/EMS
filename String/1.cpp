@@ -6,10 +6,10 @@ auto main(int argc, const char** argv) -> int {
     std::string a,b;
     std::cout<<"Zadaj retazec znakov: ";
     std::getline(std::cin, a);
-    b = a;
     for(auto i: a) {
-        std::cout<<i<<" ";
+        b += i;
+        b += " ";
     }
-    std::cout<<std::endl;
+    std::cout<<b<<std::endl;
     return 0;
 }

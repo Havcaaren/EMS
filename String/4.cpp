@@ -3,7 +3,7 @@
 //#include <algorithm>
 
 auto main(int argc, const char** argv) -> int {
-    std::string a, b = "";
+    std::string a, b;
     std::cout<<"Zadaj retazec pismen: ";
     std::getline(std::cin, a);
     //std::reverse(a.begin(), a.end());
