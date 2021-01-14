@@ -39,5 +39,6 @@ auto main(int argc, const char** argv) -> int {
     } else {
         std::cout<<"Drzitel tohto rodneho je muzskeho pohlavia."<<std::endl;
     }
+    
     return 0;
 }

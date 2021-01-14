@@ -7,7 +7,7 @@ auto main(int argc, const char** argv) -> int {
     std::getline(std::cin, a);
     std::cout<<"Zadaj druhy retazec: ";
     std::getline(std::cin, b);
-    if (a == b) {
+    if (!a.compare(b)) {
         std::cout<<"Retazce su rovnake."<<std::endl;
     } else {
         std::cout<<"Retazce nie su rovnake."<<std::endl;

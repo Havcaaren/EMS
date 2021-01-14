@@ -6,7 +6,7 @@ auto main(int argc, const char** argv) -> int {
     std::cout<<"Zadaj retazec pismen: ";
     std::getline(std::cin, a);
     for (int i = a.length()-2; i >= 0; --i){
-        a += a[i];
+        a += a.at(i);
     }
     std::cout<<a<<std::endl;
     return 0;
