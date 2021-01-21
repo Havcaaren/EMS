@@ -12,7 +12,7 @@ auto main(int argc, const char** argv) -> int {
         size_t tmp = DNA.find(a,off);
         if(tmp != std::string::npos) {
             pocet++;
-            off = tmp + 3;
+            off = tmp + a.size();
         } else {
             break;
         }
