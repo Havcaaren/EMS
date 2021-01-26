@@ -30,10 +30,12 @@ int main(int argc, const char** argv) {
     for (auto i: znamky) {
         suc += i;
     }
+
+    suc -= max;
+    suc -= min;
+
     std::cout<<"Najhorsia znamka: "<<max<<std::endl;
     std::cout<<"Najlepsia znamka: "<<min<<std::endl;
-    std::cout<<"Priemer: "<<suc/znamky.size()<<std::endl;
-    
-
+    std::cout<<"Priemer: "<<suc/(znamky.size()-2)<<std::endl;
     return 0;
 }
