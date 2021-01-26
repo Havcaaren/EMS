@@ -3,12 +3,11 @@
 #include <string>
 #include <vector>
 
-auto main(int argc, const char** argv) -> int {
+int main(int argc, const char** argv) {
     std::string slovo;
     std::vector<std::string> per;
     std::cout<<"Zadaj slovo: ";
     std::getline(std::cin, slovo);
-    per.push_back(slovo);
     std::sort(slovo.begin(), slovo.end());
     do {
         per.push_back(slovo);
