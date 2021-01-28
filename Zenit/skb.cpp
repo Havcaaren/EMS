@@ -14,22 +14,16 @@ bool isPrime(int n) {
 
 int main(int argc, const char** argv) {
     int start = 41;
-    int cisla[4];
     int i = 0;
     while (true) {
         if (isPrime(start) && isPrime(start+2)) {
-            cisla[i] = start;
-            cisla[i+1] = (start + 2);
-            i +=2;
+            std::cout<<start<<" "<<start+2<<" ";
+            i++;
         }
-        if (i == 4) {
+        if (i == 2) {
             break;
         }
         start += 2;
     }
-    for (int i = 0; i < 4; i++) {
-        std::cout<<cisla[i]<<" ";
-    }
-
     return 0;
 }
