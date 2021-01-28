@@ -25,5 +25,6 @@ int main(int argc, const char** argv) {
         }
         start += 2;
     }
+    std::cout<<std::endl;
     return 0;
 }
