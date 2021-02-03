@@ -13,7 +13,6 @@ int main() {
     for (int i = 0; i < n; ++i) {
         std::cin>>poch[i];
     }
-
     for (int i = n-1; i >= 0; --i) {
         if (poch[i] > x) {
             a.append(std::to_string(i+1) + ' ');
